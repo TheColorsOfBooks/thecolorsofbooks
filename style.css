@@ -92,10 +92,18 @@ h3 {
 }
 
 #intro {
-	background-color: #f76421;
+	height: 60vh;
+	background-color: #f77337;
 	color: #ffffff;
-	opacity: 0.9;
+
 }
+
+#filling {
+	width: 100vw;
+	height: 30vh;
+	background-color: #f77337;
+}
+
 h3.intro {
 	position: relative;
 	width: 60%;
@@ -106,11 +114,56 @@ h3.intro {
 	transform: translate(-50%, -50%);
 }
 
-.smallbook{
-	overflow-y: hidden;
-	max-height: 450px ! important;
-	position: relative;            
-	transform: translate(-0%, 45%);
+#topwrap{
+	background-color: #e7eee6;
+}
+
+#innertopwrap{
+	padding-top: 15vh;
+}
+
+.innerwrap{
+	height: 100%;
+	width: 100%;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+div#leftdiv{
+	width: 30%;
+	float: left;
+	text-align: center;
+}
+
+
+div#middlediv{
+	width: 30%;
+	float: left;
+	text-align: center;
+	padding-top: 2px;
+}
+
+div#rightdiv{
+	width: 30%;
+	float: left;
+	text-align: center;
+}
+
+.bookwrap {
+	background-color: #e9f1ed;
+}
+
+.smallbookwrap {
+	float: left;
+	width: 50%;
+}
+
+.textwrap {
+	position: relative;
+	width: 50%;
+	height: 100%;
 }
 
 
@@ -151,30 +204,7 @@ p{
 	margin-right: auto;
 }
 
-div#book_01{
-	width: 350px;
-	height: 525px;
-	float:left;
-	text-align: center;
-	padding-left: 60px;
-}
 
-div#book_03{
-	width: 350px;
-	height: 525px;
-	text-align: center;
-	float:right;
-	padding-right: 60px;
-}
-
-div#book_02{
-	width: 350px;
-	height: 525px;
-	margin-left:auto;
-	margin-right:auto;
-	text-align: center;
-	padding-top: 2px;
-}
 
 	
 /* css for the indivdual visualization pages no 01*/

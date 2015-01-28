@@ -13,6 +13,12 @@
     cursor: pointer;
 }
 
+.smallbook{
+  overflow-y: hidden;
+  max-height: 420px ! important;
+  position: relative;
+}
+
 /* CSS FOR A HIDDEN SPAN THAT CHECKS HOW LONG EACH WORD IS WHEN ITS PRINTED WITH THE SPECIFIED FONT*/
 #test {
   font-family: 'Merriweather', serif;
@@ -21,16 +27,17 @@
   left: -99999px;
 }
 
+
 /* CSS FOR THE COLOR KEY (WHICH IS A LIST) */
 
 #belowlegend {
   opacity: 0.6;
+  font-size: 1.3vw;
+  color: white;
 }
 
 #legendwrap {
-  position: relative;
-  width: 100%;
-  bottom: -25%;
+  padding-top: 10px;
 }
 
 .legend {
@@ -38,12 +45,36 @@
   width: 60%;
   margin-right: auto;
   margin-left: auto;
+  font-size: 1.3vw;
+}
+
+/*TEST CSS FOR FIXED KEY*/
+
+.clear { 
+  clear:both; 
+}
+
+div#sticker {
+  overflow: hidden;
+  width: 100%;
+  background-color: #f77337;
+  color: #ffffff;
+  opacity: 1;
+  z-index: 100;
+}
+
+.stick {
+  top:0px;
+  position:fixed;
+  background-color: #e9f1ed;
+  margin-bottom: 20px;
+  
 }
 
 li.key {
   border-top-width: 3vh; /*height of the color key colored box*/
   border-top-style: solid;
-  font-size: 1.3vw;
+  font-size: 1.1vw;
   text-align: right;
   width: 13%; /*width of each colorbox in the key*/
 
@@ -52,6 +83,8 @@ li.key {
 .list-inline {
   padding-left: 0;
   list-style: none;
+  margin-top: 3px;
+  margin-bottom: 10px;
 }
 
 .list-inline li {
