@@ -54,7 +54,7 @@ p{
 /* css for the start page */
 
 #wrap{
-	background-color: #e7eee6;
+	background-color: #e9f1ed;
 	width: 1200px;
 	height: 600px;
 	margin-left: auto;
@@ -90,21 +90,21 @@ div#book_02{
 /* css for the indivdual visualization pages no 01*/
 
 section#viz01{
-	background-color: #fbe7dd;
+	background-color: #e9f1ed;
 	width: 1200px;
 	height: 600px;
 	margin-left: auto;
 	margin-right: auto;
 }
 div#keywrap01{
-	background-color: #e7eee6;
+	background-color: #e9f1ed;
 	width: 	600px;
 	height: 600px;
 	float: right;
 }
 
 div#textbox01{
-	background-color: #b4e2d8;
+	background-color: #e9f1ed;
 	width: 500px;
 	float: right;
 	margin-top: 50px;
@@ -121,7 +121,7 @@ div#key01{
 
 
 section#viz02{
-	background-color: #8ea9c4;
+	background-color: #e9f1ed;
 	width: 1200px;
 	height: 600px;
 	margin-left: auto;
@@ -130,14 +130,14 @@ section#viz02{
 }
 
 div#keywrap02{
-	background-color: #e7eee6;
+	background-color: #e9f1ed;
 	width: 	600px;
 	height: 600px;
 	float: right;
 }
 
 div#textbox02{
-	background-color: #b4e2d8;
+	background-color: #e9f1ed;
 	width: 500px;
 	float: right;
 	margin-top: 50px;
@@ -153,7 +153,7 @@ div#key02{
 /* css for the indivdual visualization pages no 03*/
 
 section#viz03{
-	background-color: #b4e2d8;
+	background-color: #e9f1ed;
 	width: 1200px;
 	height: 600px;
 	margin-left: auto;
@@ -162,14 +162,14 @@ section#viz03{
 }
 
 div#keywrap03{
-	background-color: #e7eee6;
+	background-color: #e9f1ed;
 	width: 	600px;
 	height: 600px;
 	float: right;
 }
 
 div#textbox03{
-	background-color: #b4e2d8;
+	background-color: #e9f1ed;
 	width: 500px;
 	float: right;
 	margin-top: 50px;
@@ -182,7 +182,19 @@ div#key03{
 	text-align: center;
 }
 
+/*CSS FOR THE LITTLE PRINCE POSTER*/
 
+div#poster{
+	background-color: #e9f1ed;
+	width: 1200px;
+	height: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div#littleprince{
+	float:right;
+}
 
 
 /* Design for tablet*/
@@ -192,7 +204,7 @@ div#key03{
 
 
 #wrap{
-	background-color: #e7eee6;
+	background-color: #e9f1ed;
 	width: 700px;
 	height: 500px;
 	margin-left: auto;
@@ -222,7 +234,7 @@ h4{
 /* Design for tablet section 01*/
 
 section#viz01{
-	background-color: #fbe7dd;
+	background-color: #e9f1ed;
 	width: 700px;
 	height: 500px;
 	margin-left: auto;
@@ -230,7 +242,7 @@ section#viz01{
 }
 
 div#keywrap01{
-	background-color: #e7eee6;
+	background-color: #e9f1ed;
 	width: 	350px;
 	height: 500px;
 	float: right;
@@ -255,7 +267,7 @@ div#key01{
 /* Design for tablet section 02*/
 
 section#viz02{
-	background-color: #8ea9c4;
+	background-color: #e9f1ed;
 	width: 700px;
 	height: 500px;
 	margin-left: auto;
@@ -264,7 +276,7 @@ section#viz02{
 }
 
 div#keywrap02{
-	background-color: #e7eee6;
+	background-color: #e9f1ed;
 	width: 	350px;
 	height: 500px;
 	float: right;
@@ -289,7 +301,7 @@ div#key02{
 /* Design for tablet section 03*/
 
 section#viz03{
-	background-color: #b4e2d8;
+	background-color: #e9f1ed;
 	width: 700px;
 	height: 500px;
 	margin-left: auto;
@@ -298,7 +310,7 @@ section#viz03{
 }
 
 div#keywrap03{
-	background-color: #e7eee6;
+	background-color: #e9f1ed;
 	width: 	350px;
 	height: 500px;
 	float: right;
@@ -324,7 +336,7 @@ div#key03{
 div#book_01{
 	width: 150px;
 	height: 200px;
-	background-color: #7ccbbd;
+	background-color: #e9f1ed;
 	float:left;
 	
 }
@@ -332,13 +344,13 @@ div#book_01{
 div#book_03{
 	width: 150px;
 	height: 200px;
-	background-color: #7ccbbd;
+	background-color:#e9f1ed;
 	float: right;
 }
 div#book_02{
 	width: 150px;
 	height: 200px;
-	background-color: #7ccbbd;
+	background-color: #e9f1ed;
 	margin-left:auto;
 	margin-right:auto;
 	

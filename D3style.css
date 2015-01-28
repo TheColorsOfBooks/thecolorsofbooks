@@ -69,3 +69,17 @@ li.key {
   font-family: 'Merriweather', serif;
   font-stretch: expanded;
 }
+
+
+/*tablet CSS*/
+
+@media screen and (max-width: 768px){
+  .smallbook {
+  overflow-y: hidden;
+  height: 300px !important;
+  width: 200px !important;
+  float: none;
+  display: inline-block;
+  /*padding: 20px;*/
+}
+}
