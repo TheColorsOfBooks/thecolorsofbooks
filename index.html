@@ -19,20 +19,32 @@
 
 		<span id="test"></span>
 
-		<!-- Top section on the site-->
-	
-		    <header id="pagetitle">
-			    	
-				<h1 id="logo">The Colors Of Books</h1>
+		<!-- Top section on the site-->  <div id="start" class="wrap">
+            
+        <h1 class="header">THE COLORS OF BOOKS</h1>
+        <h2 class="tagline">Judging a book by its colors </h2>
+        <!-- Intro about the project, what is it that you are looking at? </br>Well the anser is very complicated so we will get back to you. -->
 
-				<h2>Judging a book by its colors</h2>
+        <img class="down" src="downwhite.svg"/>
 
-				<div id= "bgbild"></div>		
-					
-			</header>
+  </div>
 
-			<div id="intro"><h5>Intro about the project, what is it that you are looking at? Well the anser is very complicated so we will get back to you.</h5></div>
-				
+<!-- // INTRO PAGE  -->
+
+<div id="intro" class="wrap">
+
+  <h3 class="intro">Imma put some intro here, like: </br>
+    Intro about the project, what is it that you are looking at? </br>
+    Well the anser is very complicated so we will get back to you. </h3>
+
+  <div id="legendwrap">
+    <div id="legend" class="legend" >Commonness of the word</div>
+    <div id="belowlegend" class="legend">
+      &#8804;100 = the word is one of the 100 most common english words</div>
+  </div>
+</div>
+
+
 <div id="wrap">
 
 <!-- Start page, links to all of the visualizations-->
@@ -470,7 +482,7 @@ function tryStart() {
 
 WebFont.load({
   google: {
-    families: ['Merriweather', 'Oswald']
+    families: ['Merriweather', 'Oswald', 'Noto Sans', 'Josefin Sans:100,300' ]
   },
   active: function() {
     fontsloaded = true;

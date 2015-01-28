@@ -1,32 +1,122 @@
 
 /* css for all the text on the page */
 
-h1#logo {
-	font-family: 'Oswald';
-	font-size: 40px;
-	text-transform: uppercase;
-	text-align: center;
+body {
+	font-family: 'Merriweather', 'Josefin Sans', 'Noto Sans';
+	font-size: 1.5vw;
+	margin: 0px;
+}
+.wrap {
+	overflow: hidden;
+	width:	100vw;
+	height: 100vh;
 }
 
-div#intro{
+
+#start {
+	font-family: 'Josefin Sans', 'Noto Sans';
 	text-align: center;
-	margin-bottom: 40px;
+	position: relative;
+	-webkit-animation: colorchange 20s infinite;
+	animation: colorchange 20s inifinite;
 }
 
-h2{
-	font-family: 'Merriweather', serif;
-	font-size: 14px;
-	text-align: center;
-	font-weight: lighter;
-	margin-top: -30px;
-	margin-bottom: 40px;
+
+@keyframes colorchange
+{
+0%   {background: #22989c;}
+12%  {background: #66b595;}
+40%  {background: #d1d843;}
+65%  {background: #fb5954;}
+90% {background: #66b595;}
+100% {background: #22989c;}
 }
 
-h3{
-	font-family: 'Oswald';
-	font-size: 20px;
-	text-align: center;
-	text-transform: uppercase;
+@-webkit-keyframes colorchange /* Safari and Chrome */
+{
+0%   {background: #22989c;}
+12%  {background: #66b595;}
+40%  {background: #d1d843;}
+65%  {background: #fb5954;}
+90% {background: #66b595;}
+100% {background: #22989c;}
+}
+
+.down {
+	opacity: 0.3;
+	width: 50px;
+	height: 50px;
+	position: absolute;            
+	top: 90%;
+	margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.down:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+
+h1 {
+	font-weight: 300;
+	color: #FFFFFF;
+	font-size: 8vw;
+	position: absolute;            
+	top: 35%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+}
+
+h2 {
+	padding-top: 40px;
+	color: #FFFFFF;
+	font-weight: 100;
+	font-size: 5vw;
+}
+
+h2.tagline {
+	position: absolute;            
+	top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+}
+
+h3 {
+	font-family: 'Merriweather';
+	font-weight: 100;
+	font-size: 2.5vw;
+}
+
+#intro {
+	background-color: #f76421;
+	color: #ffffff;
+	opacity: 0.9;
+}
+h3.intro {
+	position: relative;
+	width: 60%;
+	text-align: left;
+	top: 35%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+}
+
+.smallbook{
+	overflow-y: hidden;
+	max-height: 450px ! important;
+	position: relative;            
+	transform: translate(-0%, 45%);
+}
+
+
+.smalltitle {
+	position: relative;            
+    transform: translate(-0%, 0%);
 }
 
 h4{
