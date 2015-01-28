@@ -33,9 +33,11 @@
 
 <div id="intro" class="wrap">
 
-  <h3 class="intro">Imma put some intro here, like: </br>
-    Intro about the project, what is it that you are looking at? </br>
-    Well the anser is very complicated so we will get back to you. </h3>
+  <h3 class="intro">A visualization that determines the </br>
+     complexity of a book by using a dataset containing the 5000 most common words in English, combined with </br>
+    the first 5000 characters of three books. </h3>
+
+    
 </div>
 
   <div id="sticker" class="">
@@ -57,70 +59,90 @@
     <div id="leftdiv">
       <div id="leftbook" class="smallbook"></div>
       <div class="smalltitle">
-        <p>The Little Prince</p>
-        <p>Antoine de Saint Exupery, 1943</p>
+        <a class="page-scroll" href="#hamlet"><h4>Hamlet</h4></a>
+        <h5>William Shakespeare 1600</h5>
+
       </div>
     </div>
+
 
     <div id="middlediv">
       <div id= "middlebook" class="smallbook"></div>
       <div class="smalltitle">
-        <p>The Little Prince</p>
-        <p>Antoine de Saint Exupery, 1943</p>
+        <a class="page-scroll" href="#littleprince"><h4>Little Prince</h4></a>
+        <h5>Antoine de Saint Exupery, 1943</h5>
       </div>
     </div>
 
     <div id="rightdiv">
       <div id= "rightbook" class="smallbook"></div>
       <div class="smalltitle">
-        <p>The Little Prince</p>
-        <p>Antoine de Saint Exupery, 1943</p>
+        <a class="page-scroll" href="#shades"><h4>50 shades of grey</h4></a>
+        <h5>E. L. James, 2011</h5>
       </div>
     </div>
   </div>
 </div>
 
 <!-- end three small books -->
+<div id="hamlet">
+  <div class="wrap bookwrap">
+    <div class="innerwrap">
 
-<div class="wrap bookwrap">
-  <div class="innerwrap">
+        <div class="smallbookwrap">
+            <div id="book1" class="book"></div>
+        </div>
+      <div class="textwrap">
+        <h4>Hamlet</h4>
 
-    <div class="smallbookwrap">
-        <div id="book1" class="book"></div>
+<h5>Hamlet is a tragedy written by William Shakespeare. Consider among the most powerful and influential tragedies in English literature, it was also his most popular works during his lifetime. 
+Set in the Kingdom of Denmark, the play is about the revenge of Hamlet on Claudius who murdered his own brother. The book is often studied in secondary school.</h5>
+
+      </div>
+
     </div>
-    <div class="textwrap"></div>
-
   </div>
 </div>
 
-<div class="wrap bookwrap">
-  <div class="innerwrap">
+<div id="littleprince">
+  <div class="wrap bookwrap">
+    <div class="innerwrap">
 
-    <div class="smallbookwrap">
-        <div id="book2" class="book"></div>
+      <div class="smallbookwrap">
+          <div id="book2" class="book"></div>
+      </div>
+      <div class="textwrap">
+        
+        <h4>The Little Prince</h4>
+
+<h5>The Little Prince is most-read and most-translated book in the French language. Written by Antoine de Saint-Éxupéry, The Little Prince is a poetic tale in which a pilot stranded in the desert meets a young prince fallen to Earth from a tiny asteroid. Often used as a beginner's book for French language students, it contains a high ratio of common words.</h5>
+      </div>
+
     </div>
-    <div class="textwrap"></div>
-
   </div>
 </div>
 
-<div class="wrap bookwrap">
-  <div class="innerwrap">
+<div id="shades">
+  <div class="wrap bookwrap">
+    <div class="innerwrap">
 
-    <div class="smallbookwrap">
-        <div id="book3" class="book"></div>
+      <div class="smallbookwrap">
+          <div id="book3" class="book"></div>
+      </div>
+      <div class="textwrap">
+        
+        <h4>50 Shades of Grey</h4>
+
+<h5>Fifty Shades of Grey, written by E. L. James, is latest worldwide best seller. An erotic romance, depicting the relationship between a college graduate and a young business man. Originally self-published as an ebook, its prose his seen as poor. The ratio of common word is also pretty high.</h5>
+      </div>
+
     </div>
-    <div class="textwrap"></div>
-
   </div>
 </div>
 
-<div class="wrap bookwrap">
-  <div class="innerwrap">
+<!-- WRAP FOR THE PLACEMENT OF THE POSTER-->
+<!-- <div class="wrap bookwrap"><div class="innerwrap"></div></div>-->
 
-
-  </div>
-</div>
 
 				 <!-- Visualization page 01-->
 
@@ -173,12 +195,22 @@
 				<div id="book3" class="book"></div>
 				</section> -->
 
-         <div id="poster">
-           
-           <div id="littleprince"> <img src="images/littleprince_poster.jpg" width="400px;" height="679px;"></a></div>
-           </div>
+       
 
          </div>
+         <div id="social">
+
+           <a target="_blank" href="https://twitter.com/home?status= Judge a book by its color"><img src="twitter.png"></a>
+
+
+         </div>
+         <footer>
+      
+           <h6>By Hyper Island students <a href="mailto:caroline.thordenberg@hyperisland.se">Caroline Thordenberg</a>,<a href="mailto:thomas.boulliot@hyperisland.se">Thomas Boulliot</a>, and 
+           <a href="mailto:emelie.norstrom@hyperisland.se">Emelie Norström</a>
+           </h6>
+         </footer>
+
 
 		<!-- where to put all scripts <script type="text/javascript" src="jquery.js"></script>-->
 		<script type="text/javascript" src="main.js"></script>
@@ -495,7 +527,7 @@ function tryStart() {
 
 WebFont.load({
   google: {
-    families: ['Merriweather', 'Oswald', 'Noto Sans', 'Josefin Sans:100,300' ]
+    families: ['Merriweather', 'Oswald', 'Noto Sans', 'Josefin Sans:100,300,600,700' ]
   },
   active: function() {
     fontsloaded = true;
