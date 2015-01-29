@@ -122,9 +122,10 @@ h3.intro {
 }
 
 div#infotext{
-font-family: 'Josefin Sans';
-font-weight: 100;
-font-size:  2vw;
+font-family: 'Merriweather';
+font-weight: lighter;
+color: #43b5a5;
+font-size:  1.2vw;
 float:left;
 position: relative;
 width: 80%;
