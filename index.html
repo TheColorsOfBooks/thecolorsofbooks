@@ -8,7 +8,8 @@
 			
 			<title>The Colors Of Books</title>
 
-		    <script src="d3.min.js" charset="utf-8"></script>
+        <script src="d3.min.js" charset="utf-8"></script>
+
 		    <script src="thousand.js" type="text/javascript"></script>
 			<link rel="stylesheet" href="style.css" />
 			<link rel="stylesheet" href="D3style.css" />
@@ -19,43 +20,57 @@
 
 		<span id="test"></span>
 
-		<!-- Top section on the site-->  <div id="start" class="wrap">
+		<!-- Top section on the site-->  
+    <div id="start" class="wrap">
+      <div class="startwrap">
             
         <h1 class="header">THE COLORS OF BOOKS</h1>
         <h2 class="tagline">Judging a book by its colors </h2>
         <!-- Intro about the project, what is it that you are looking at? </br>Well the anser is very complicated so we will get back to you. -->
 
         <a class="page-scroll" href="#intro"><img class="down" src="downwhite.svg"/></a>
-
+      </div>
   </div>
 
 <!-- // INTRO PAGE  -->
 
 <div id="intro" class="wrap">
 
-  <h3 class="intro">A visualization that determines the </br>
+<!--   <h3 class="intro">A visualization that determines the </br>
      complexity of a book by using a dataset containing the 5000 most common words in English, combined with </br>
-    the first 5000 characters of three books. </h3>
+    the first 5000 characters of three books. </h3> -->
 
-    
+    <h3 class="intro">Visualizing the complexity of books with color. Created by using a dataset of the <b>5 000 most common words</b> in the English language. We visualize <b>how often these words are used</b> in three very different books.</br></br>
+      The darker the book, the more common words are used.
+    </h3>
+
+
 </div>
 
   <div id="sticker" class="">
     <div id="legendwrap">
-      <div id="legend" class="legend" >Commonness of the word</div>
+      <div id="legend" class="legend">Commonness of the word</div>
     </div>
   </div>
 
   <div id="filling">
     <div id="belowlegend" class="legend">
-        &#8804;100 = the word is one of the 100 most common english words</div>
+        &#8804;100 = the word is one of the 100 most common words</div>
     </div>
   </div>
 
 <div id="topwrap" class="wrap">
-  <div id="innertopwrap" class="innerwrap">
-<!-- Three small books PAGE -->
+  <div id="togglewrap">
+    <div class="switch">
+      <input id="cmn-toggle-4" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+      <label for="cmn-toggle-4"></label>
+    </div>
+<!--     <div>Sort words</div> -->
+  </div>
 
+  <div id="innertopwrap" class="innerwrap">
+
+<!-- Three small books PAGE -->
     <div id="leftdiv">
       <div id="leftbook" class="smallbook"></div>
       <div class="smalltitle">
@@ -69,7 +84,7 @@
     <div id="middlediv">
       <div id= "middlebook" class="smallbook"></div>
       <div class="smalltitle">
-        <a class="page-scroll" href="#littleprince"><h4>Little Prince</h4></a>
+        <a class="page-scroll" href="#littleprince"><h4>The Little Prince</h4></a>
         <h5>Antoine de Saint Exupery, 1943</h5>
       </div>
     </div>
@@ -133,69 +148,12 @@ Set in the Kingdom of Denmark, the play is about the revenge of Hamlet on Claudi
         
         <h4>50 Shades of Grey</h4>
 
-<h5>Fifty Shades of Grey, written by E. L. James, is latest worldwide best seller. An erotic romance, depicting the relationship between a college graduate and a young business man. Originally self-published as an ebook, its prose his seen as poor. The ratio of common word is also pretty high.</h5>
+<h5>Fifty Shades of Grey, written by E. L. James, is latest worldwide best seller. An erotic romance, depicting the relationship between a college graduate and a young business man. Originally self-published as an ebook, its prose is seen as poor. The ratio of common word is also pretty high.</h5>
       </div>
 
     </div>
   </div>
 </div>
-
-<!-- WRAP FOR THE PLACEMENT OF THE POSTER-->
-<!-- <div class="wrap bookwrap"><div class="innerwrap"></div></div>-->
-
-
-				 <!-- Visualization page 01-->
-
-				<!-- Visualization page 02-->
-
-<!-- 				 <section id="viz02">
-
-         <div id="keywrap02">
-
-            <div id="textbox02"><p>Aenean pretium aliquam pharetra. Proin consequat mi ac eros malesuada imperdiet. Curabitur non pellentesque nisi, nec blandit justo. Etiam laoreet, nisl vel consectetur varius, justo nunc luctus ligula, et bibendum odio nibh Aenean pretium aliquam pharetra. Proin consequat mi ac eros malesuada imperdiet. Curabitur non pellentesque nisi, nec blandit justo. Etiam laoreet, nisl vel consectetur varius, justo nunc luctus ligula, et bibendum odio nibh </p></div>
-
-            <div id="key02">
-              
-              <img src="images/test_img.png" width="50px;" height="100px;"></a>
-              <img src="images/test_img.png" width="50px;" height="100px;"></a>
-              <img src="images/test_img.png" width="50px;" height="100px;"></a>
-              
-            </div>
-
-            </div>
-
-					<div id="backbtn02"><a class="page-scroll" href="#book_02">Back</a>
-				</div>	
-
-				<div id="book2" class="book"></div>	
-
-				
-
-				 </section>
-
-				  Visualization page 03
-
-				 <section id="viz03">
-          <div id="keywrap03">
-
-            <div id="textbox03"><p>Aenean pretium aliquam pharetra. Proin consequat mi ac eros malesuada imperdiet. Curabitur non pellentesque nisi, nec blandit justo. Etiam laoreet, nisl vel consectetur varius, justo nunc luctus ligula, et bibendum odio nibh Aenean pretium aliquam pharetra. Proin consequat mi ac eros malesuada imperdiet. Curabitur non pellentesque nisi, nec blandit justo. Etiam laoreet, nisl vel consectetur varius, justo nunc luctus ligula, et bibendum odio nibh </p></div>
-
-            <div id="key03">
-              
-              <img src="images/test_img.png" width="50px;" height="100px;"></a>
-              <img src="images/test_img.png" width="50px;" height="100px;"></a>
-              <img src="images/test_img.png" width="50px;" height="100px;"></a>
-              
-            </div>
-            </div>
-
-				 <div id="backbtn03"><a class="page-scroll" href="#book_03">Back</a>
-				</div>
-
-				<div id="book3" class="book"></div>
-				</section> -->
-
-       
 
          </div>
          <div id="social">
@@ -224,9 +182,14 @@ Set in the Kingdom of Denmark, the play is about the revenge of Hamlet on Claudi
         var windowpos = $(window).scrollTop();
 
         if (windowpos >= pos.top) {
-          s.addClass("stick");
+          s.addClass("stick")
+          s.removeClass("stickycolor");
+          $(".list-inline").css("margin-top", 3 + "px");
+          ;
         } else {
-          s.removeClass("stick"); 
+          s.removeClass("stick");
+          s.addClass("stickycolor")
+          $(".list-inline").css("margin-top", 14 + "px");
         }
       });
     });
@@ -237,7 +200,6 @@ Set in the Kingdom of Denmark, the play is about the revenge of Hamlet on Claudi
 
 
 <script type="text/javascript">
-
 
 
 var viewArray = [
@@ -256,21 +218,21 @@ height = 1000 - margin.top - margin.bottom;
 
 
 // Parameters & variables
-var textsize = 11;
-var boxside = 18;
-var seetext = false;
+var textsize = 10;
+var boxside = 20;
+var seetext = true;
 var isSorted = false;
 var lastJustifyForce = false;
 var viewArrayi = 5;
 var thousands = viewArray[viewArrayi];
-var animationTime = 2000;
+var animationTime = 3000;
 var coloranimationTime = 1000;
 
 
 var widthS = 300,
     heightS = 600,
-    textsizeS = 6,
-    boxsideS = 5,
+    textsizeS = 8,
+    boxsideS = 7,
     viewArrayiS = 5,
     thousandsS = viewArray[viewArrayiS],
     lastJustifyForceS = false,
@@ -300,6 +262,16 @@ var strokecolor = "#FFFFFF"
 var firstblue = ["#003478", "#335D93", "#6685AE", "#99AEC9", "#CCD6E4"];
 var neueblue = ["#117475", "#26948B", "#43B5A5" , "#64D4BB", "#93E8D1", "#BDF7E0", "#DCFFEE"];
 var emelieblue = ["#117475", "#21827B", "#2B9992" , "#47ADA5", "#74D2C5", "#A2E8D7", "#DCFFEE"];
+
+
+$( "#cmn-toggle-4" ).change(function() {
+  setCommonAndScales();
+  if ($(this).prop('checked'))
+    sortSmall();
+  else
+    resetSmall();
+  drawSmall();
+});
 
 
 // function to get width of a text in html
@@ -411,19 +383,19 @@ function getText(txtfile, callback) {
 
 function start() {
 
-    getText( "books/tinyprince.txt", function (lines) {
+    getText( "books/5000hamlet.txt", function (lines) {
         lines1 = lines;
         lastLayoutInput1 = lines;
         data1 = layoutLines(lastLayoutInput1);
         drawBook(group1A, group1B, data1);
     });
-    getText( "books/tinyhamlet.txt", function (lines) {
+    getText( "books/5000littleprince.txt", function (lines) {
         lines2 = lines;
         lastLayoutInput2 = lines;
         data2 = layoutLines(lastLayoutInput2);
         drawBook(group2A, group2B, data2);
     });
-    getText( "books/tinyshades.txt", function (lines) {
+    getText( "books/5000fiftyshadegrey.txt", function (lines) {
         lines3 = lines;
         lastLayoutInput3 = lines;
         data3 = layoutLines(lastLayoutInput3);
@@ -646,17 +618,17 @@ keys.enter().append('li')
     });
 
 
-$(".list-inline li").click(function(){
-    var value = $(this).attr('value');
-    viewArrayi = value;
-    setCommonAndScales();
+// $(".list-inline li").click(function(){
+//     var value = $(this).attr('value');
+//     viewArrayi = value;
+//     setCommonAndScales();
 
-    if (isSorted)
-      sort();
-    else
-      reset();
-    draw();
-});
+//     if (isSorted)
+//       sort();
+//     else
+//       reset();
+//     draw();
+// });
 
 
 
@@ -761,19 +733,19 @@ function setCommonAndScalesSmall() {
 
 
 function startSmall() {
-  getText( "books/tinyshades.txt", function (lines) {
+  getText( "books/5000hamlet.txt", function (lines) {
         lines4 = lines;
         lastLayoutInput4 = lines;
         data4 = layoutLines(lastLayoutInput4);
         drawBookSmall(group4A, group4B, data4);
     });
-    getText( "books/tinyshades.txt", function (lines) {
+    getText( "books/5000littleprince.txt", function (lines) {
         lines5 = lines;
         lastLayoutInput5 = lines;
         data5 = layoutLines(lastLayoutInput5);
         drawBookSmall(group5A, group5B, data5);
     });
-    getText( "books/tinyshades.txt", function (lines) {
+    getText( "books/5000fiftyshadegrey.txt", function (lines) {
         lines6 = lines;
         lastLayoutInput6 = lines;
         data6 = layoutLines(lastLayoutInput6);
@@ -874,7 +846,6 @@ function reflowSmall() {
 
 function drawRectSmall(rect) {
   rect
-    .classed("word", true)
     .classed("rect", true)
     .style("opacity", function(d) {
       return 1;
@@ -888,8 +859,8 @@ function drawRectSmall(rect) {
     .style("stroke-opacity", function(d) {
         return 0.6;
     })
-    .attr("rx", 0.2)
-    .attr("ry", 0.2)
+    .attr("rx", 0.1)
+    .attr("ry", 0.1)
 
     .style("fill", function(d) {
         return blueScale(d.commoni);

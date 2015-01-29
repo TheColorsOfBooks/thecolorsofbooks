@@ -58,15 +58,24 @@ body {
 }
 
 h1 {
-	font-weight: 300;
+	font-weight: 600;
 	color: #FFFFFF;
-	font-size: 8vw;
+	font-size: 7vw;
 	position: absolute;            
 	top: 35%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-	font-weight: bold;
+}
+
+h2.tagline {
+	position: absolute;
+	padding: 20%;
+	top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
 }
 
 h2 {
@@ -76,14 +85,7 @@ h2 {
 	font-size: 5vw;
 }
 
-h2.tagline {
-	position: absolute;            
-	top: 52%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
 
-}
 
 h3 {
 	font-family: 'Merriweather';
@@ -92,7 +94,8 @@ h3 {
 }
 
 #intro {
-	height: 60vh;
+	text-align: left;
+	height: 65vh;
 	background-color: #f77337;
 	color: #ffffff;
 
@@ -100,20 +103,22 @@ h3 {
 
 #filling {
 	width: 100vw;
-	height: 30vh;
+	height: 25vh;
 	background-color: #f77337;
 }
 
 h3.intro {
+	font-family: 'Josefin Sans';
+	font-weight: 100;
+	font-size: 2.8vw;
 	position: relative;
 	width: 60%;
-	text-align: left;
-	top: 38%;
+	top: 50%;
 	left: 50%;
 	margin-right: -50%;
 	transform: translate(-50%, -50%);
-	font-family: 'Josefin Sans', 'Noto Sans';
-	font-size: 4vw;
+
+
 }
 
 div#topwrap.wrap{
@@ -127,11 +132,10 @@ div#innertopwrap.innertopwrap{
 }
 
 #topwrap{
-	background-color: #e1ebe6;
+	background-color: #f9fcfb;
 }
 
 #innertopwrap{
-	padding-top: 15vh;
 	padding-left: 15vh;
 }
 
@@ -142,6 +146,29 @@ div#innertopwrap.innertopwrap{
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
+}
+
+.startrwrap{
+	height: 100%;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+#togglewrap{
+max-width: 1000px;
+margin-left: auto;
+margin-right: auto;
+	width: 100%;
+	height: 25vh;
+	position: relative;
+	}
+
+.switch {
+	position: relative;
+	top: 60%;
+
 }
 
 div#leftdiv{
@@ -155,17 +182,30 @@ div#middlediv{
 	width: 30%;
 	float: left;
 	text-align: center;
-	padding-top: 2px;
+
 }
 
 div#rightdiv{
 	width: 30%;
 	float: left;
 	text-align: center;
+
 }
 
 .bookwrap {
+/*	background-color: #e1ebe6;*/
+}
+
+#hamlet {
 	background-color: #e1ebe6;
+}
+
+#shades {
+	background-color: #e1ebe6;
+}
+
+#littleprince {
+	background-color: #f9fcfb;
 }
 
 .smallbookwrap {
@@ -195,11 +235,11 @@ a:-webkit-any-link {
 
 h4{
 	font-family: 'Josefin Sans', 'Noto Sans';
-	font-weight: 700;
+	font-weight: 600;
 	text-transform: uppercase;
 	text-decoration: none;
-	font-size: 30px;
-	color: #ffffff;
+	font-size: 28px;
+	color: #43b5a5;
 }
 
 h4:hover{
@@ -207,10 +247,10 @@ h4:hover{
 }
 
 h5{
-	font-family: Merriweather;
+	font-family: 'Merriweather';'
 	font-size: 20px;
-	font-weight: lighter;
-	color: #ffffff;
+	font-weight: 200;
+	color: #43b5a5;
 	-webkit-margin-after:0px;
 	margin-top: -30px;
 	margin-bottom: 50px;
@@ -258,6 +298,66 @@ div#social{
 	height: 600px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+
+/* CSS FOR TOGGLEBAR */
+
+.cmn-toggle {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+}
+.cmn-toggle + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+}
+
+/**/
+
+input.cmn-toggle-round-flat + label {
+  padding: 2px;
+  width: 80px;
+  height: 24px;
+  opacity: 0.9;
+  background-color: #f77337;
+  border-radius: 60px;
+  transition: background 0.4s;
+}
+input.cmn-toggle-round-flat + label:before,
+input.cmn-toggle-round-flat + label:after {
+  display: block;
+  position: absolute;
+  content: "";
+}
+input.cmn-toggle-round-flat + label:before {
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  background-color: #fff;
+  border-radius: 60px;
+  transition: background 0.4s;
+}
+input.cmn-toggle-round-flat + label:after {
+  top: 4px;
+  left: 4px;
+  bottom: 4px;
+  width: 30px;
+  background-color: #f77337;
+  opacity: 0.9;
+  border-radius: 52px;
+  transition: margin 0.4s, background 0.4s;
+}
+input.cmn-toggle-round-flat:checked + label {
+  background-color: #8ce196;
+}
+input.cmn-toggle-round-flat:checked + label:after {
+  margin-left: 45px;
+  background-color: #8ce196;
 }
 
 
@@ -370,6 +470,9 @@ div#littleprince{
 	float:right;
 }
 
+#littleprince .wrap {
+	background: "white";
+}
 
 /* Design for tablet*/
 
