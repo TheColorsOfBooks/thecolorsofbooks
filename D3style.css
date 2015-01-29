@@ -49,6 +49,12 @@
   font-size: 1.3vw;
 }
 
+.key:hover {
+  opacity: 0.8;
+  cursor: pointer;
+
+}
+
 /*TEST CSS FOR FIXED KEY*/
 
 .clear { 
