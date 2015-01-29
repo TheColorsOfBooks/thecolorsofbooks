@@ -68,6 +68,23 @@ h1 {
     transform: translate(-50%, -50%);
 }
 
+h5.boom{
+	margin: 0px;
+}
+
+h4.boom {
+	font-family: 'Merriweather';
+	font-weight: 600;
+/*	color: #43b5a5;*/
+	font-size: 5vw;
+	padding: 0px;
+	margin: 0px;
+	color: #117475;
+
+}
+
+
+
 h2.tagline {
 	position: absolute;
 	padding: 20%;
@@ -129,7 +146,7 @@ font-size:  1.2vw;
 float:left;
 position: relative;
 width: 80%;
-top: 60%;
+top: 62%;
 left: 10%;
 }
 
