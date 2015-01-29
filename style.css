@@ -326,6 +326,10 @@ div#social{
 	padding-top: 100px;
 }
 
+.page-scroll.h4:hover {
+	opacity: 0.4;
+}
+
 /* css for the start page */
 
 #wrap{
