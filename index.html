@@ -236,7 +236,7 @@ var widthS = 300,
     viewArrayiS = 5,
     thousandsS = viewArray[viewArrayiS],
     lastJustifyForceS = false,
-    IsSortedS = false;
+    isSortedS = false;
 
 var lines1;
 var lines2;
@@ -383,19 +383,19 @@ function getText(txtfile, callback) {
 
 function start() {
 
-    getText( "books/5000hamlet.txt", function (lines) {
+    getText( "books/smallhamlet.txt", function (lines) {
         lines1 = lines;
         lastLayoutInput1 = lines;
         data1 = layoutLines(lastLayoutInput1);
         drawBook(group1A, group1B, data1);
     });
-    getText( "books/5000littleprince.txt", function (lines) {
+    getText( "books/smallprince.txt", function (lines) {
         lines2 = lines;
         lastLayoutInput2 = lines;
         data2 = layoutLines(lastLayoutInput2);
         drawBook(group2A, group2B, data2);
     });
-    getText( "books/5000fiftyshadegrey.txt", function (lines) {
+    getText( "books/smallshades.txt", function (lines) {
         lines3 = lines;
         lastLayoutInput3 = lines;
         data3 = layoutLines(lastLayoutInput3);
@@ -618,17 +618,6 @@ keys.enter().append('li')
     });
 
 
-// $(".list-inline li").click(function(){
-//     var value = $(this).attr('value');
-//     viewArrayi = value;
-//     setCommonAndScales();
-
-//     if (isSorted)
-//       sort();
-//     else
-//       reset();
-//     draw();
-// });
 
 
 
@@ -774,12 +763,23 @@ function drawBookSmall(rect, text, words) {
 $(".list-inline li").click(function(){
     var value = $(this).attr('value');
     viewArrayiS = value;
+    viewArrayi = value;
     setCommonAndScales();
+    setCommonAndScalesSmall();
 
-    if (isSortedS)
+    if (isSorted) {
       sort();
-    else
+    } else {
+      reset();
+    };
+      
+    if (isSortedS) {
+      sortSmall();
+    } else {
       resetSmall();
+    };
+
+    draw();
     drawSmall();
 });
 
