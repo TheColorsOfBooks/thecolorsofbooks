@@ -17,6 +17,7 @@
 .smallbook{
   overflow-y: hidden;
   max-height: 430px ! important;
+  height: 40vw;
   position: relative;
 }
 

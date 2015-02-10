@@ -166,8 +166,10 @@ div#innertopwrap.innertopwrap{
 }
 
 #innertopwrap{
-	padding-left: 15vh;
 	margin-top: -25px;
+	padding: 6vw;
+	margin-top: -2vw;
+	text-align: center;
 }
 
 .innerwrap{
@@ -203,21 +205,23 @@ margin-right: auto;
 }
 
 div#leftdiv{
-	width: 30%;
+	width: 27%;
 	float: left;
 	text-align: center;
 }
 
 
 div#middlediv{
-	width: 30%;
+	width: 27%;
 	float: left;
 	text-align: center;
+	padding-left: 3vw;
+	padding-right: 3vw;
 
 }
 
 div#rightdiv{
-	width: 30%;
+	width: 27%;
 	float: left;
 	text-align: center;
 
@@ -251,6 +255,7 @@ div#rightdiv{
 	float: right;
 	margin-right: 100px;
 	margin-top: 100px;
+
 }
 
 

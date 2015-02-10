@@ -239,9 +239,9 @@ var coloranimationTime = 1000;
 
 
 var widthS = 300,
-    heightS = 600,
-    textsizeS = 8,
-    boxsideS = 7,
+    heightS = 430,
+    textsizeS = 5,
+    boxsideS = 4,
     viewArrayiS = 5,
     thousandsS = viewArray[viewArrayiS],
     lastJustifyForceS = false,
@@ -303,9 +303,9 @@ function getIndex(wordOrObject) {
 }
 
 // function to layout one line of text
-function layoutLine(line, y, layout, xwidth, forcejustify) {
+function layoutLine(line, y, layout, xwidth, forcejustify, svgwidth) {
     var x = 0;
-    var fill = width - xwidth;
+    var fill = svgwidth - xwidth;
     //sätter justify till true eller false. jämförelse är true eller false
     var justify = forcejustify || fill < width * 0.2;
     var add = justify ? fill / (line.length) : 0;
@@ -331,7 +331,9 @@ function layoutLine(line, y, layout, xwidth, forcejustify) {
     }
 }
 
-function layoutLines(lines, forcejustify) {
+function layoutLines(lines, forcejustify, svgwidth) {
+    svgwidth = svgwidth || 500;
+
     var y = 0;
     var layout = [];
     for (var i = 0; i < lines.length; i++) {
@@ -345,14 +347,14 @@ function layoutLines(lines, forcejustify) {
         if (wordString == "") return;
         var wordWidth = getWidth(wordString) + 3;
 
-        if (x + wordWidth <= width) {
+        if (x + wordWidth <= svgwidth) {
           // line is not done
           workingLine.push(word);
           x += wordWidth;
         } else {
           // line is already done
           // do something about it
-          layoutLine(workingLine, y, layout, x, forcejustify);
+          layoutLine(workingLine, y, layout, x, forcejustify, svgwidth);
           // prepare for next line
           workingLine = [word];
           x = wordWidth;
@@ -361,7 +363,7 @@ function layoutLines(lines, forcejustify) {
       }
       // layout any remainder of the line
       if (workingLine.length > 0) {
-          layoutLine(workingLine, y, layout, x, forcejustify);
+          layoutLine(workingLine, y, layout, x, forcejustify, svgwidth);
       }
       y++;
     }
@@ -734,19 +736,19 @@ function startSmall() {
   getText( "books/5000hamlet.txt", function (lines) {
         lines4 = lines;
         lastLayoutInput4 = lines;
-        data4 = layoutLines(lastLayoutInput4);
+        data4 = layoutLines(lastLayoutInput4, false, widthS);
         drawBookSmall(group4A, group4B, data4);
     });
     getText( "books/5000littleprince.txt", function (lines) {
         lines5 = lines;
         lastLayoutInput5 = lines;
-        data5 = layoutLines(lastLayoutInput5);
+        data5 = layoutLines(lastLayoutInput5, false, widthS);
         drawBookSmall(group5A, group5B, data5);
     });
     getText( "books/5000fiftyshadegrey.txt", function (lines) {
         lines6 = lines;
         lastLayoutInput6 = lines;
-        data6 = layoutLines(lastLayoutInput6);
+        data6 = layoutLines(lastLayoutInput6, false, widthS);
         drawBookSmall(group6A, group6B, data6);
     });
 };
@@ -756,6 +758,7 @@ function drawBookSmall(rect, text, words) {
 
   var bookrect = rect.selectAll("rect")
     .data(words);
+    console.log(words);
   var booktext = text.selectAll("text")
     .data(words);
 
@@ -805,9 +808,9 @@ function resetSmall() {
   lastLayoutInput4 = lines4;
   lastLayoutInput5 = lines5;
   lastLayoutInput6 = lines6;
-  data4 = layoutLines(lastLayoutInput4, false);
-  data5 = layoutLines(lastLayoutInput5, false);
-  data6 = layoutLines(lastLayoutInput6, false);
+  data4 = layoutLines(lastLayoutInput4, false, widthS);
+  data5 = layoutLines(lastLayoutInput5, false, widthS);
+  data6 = layoutLines(lastLayoutInput6, false, widthS);
   lastJustifyForceS = false;
   isSortedS = false;
 };
@@ -838,17 +841,17 @@ function sortSmall() {
   lastLayoutInput4 = sortbook(lines4);
   lastLayoutInput5 = sortbook(lines5);
   lastLayoutInput6 = sortbook(lines6);
-  data4 = sortLayout(layoutLines(lastLayoutInput4, true));
-  data5 = sortLayout(layoutLines(lastLayoutInput5, true));
-  data6 = sortLayout(layoutLines(lastLayoutInput6, true));
+  data4 = sortLayout(layoutLines(lastLayoutInput4, true, widthS));
+  data5 = sortLayout(layoutLines(lastLayoutInput5, true, widthS));
+  data6 = sortLayout(layoutLines(lastLayoutInput6, true, widthS));
   lastJustifyForceS = true;
   isSortedS = true;
 };
 
 function reflowSmall() {
-  data4 = layoutLines(lastLayoutInput4, lastJustifyForce);
-  data5 = layoutLines(lastLayoutInput5, lastJustifyForce);
-  data6 = layoutLines(lastLayoutInput6, lastJustifyForce);
+  data4 = layoutLines(lastLayoutInput4, lastJustifyForce, widthS);
+  data5 = layoutLines(lastLayoutInput5, lastJustifyForce, widthS);
+  data6 = layoutLines(lastLayoutInput6, lastJustifyForce, widthS);
 };
 
 
