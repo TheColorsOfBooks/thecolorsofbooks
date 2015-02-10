@@ -26,6 +26,12 @@ body {
   	top: 45%; left: 0; bottom: 0; right: 0;
 }
 
+.innerwrap {
+	margin: auto;
+ 	position: absolute;
+  	top: 25%; left: 0; bottom: 0; right: 0;
+}
+
 
 @keyframes colorchange
 {
@@ -105,15 +111,15 @@ h3 {
 #intro {
 	text-align: left;
 	height: 65vh;
-	background-color: #f77337;
-	color: #ffffff;
+	background-color: ##FFFFF7;
+	color: #5A5A5A;
 
 }
 
 #filling {
 	width: 100vw;
 	height: 25vh;
-	background-color: #f77337;
+	background-color: ##FFFFF7;
 }
 
 h3.intro {
