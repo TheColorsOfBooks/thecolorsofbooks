@@ -23,7 +23,7 @@ body {
 .startwrap {
 	margin: auto;
  	position: absolute;
-  	top: 50%; left: 0; bottom: 0; right: 0;
+  	top: 45%; left: 0; bottom: 0; right: 0;
 }
 
 
@@ -48,11 +48,11 @@ body {
 }
 
 .down {
-	opacity: 0.3;
-	width: 50px;
-	height: 50px;
+	opacity: 0.2;
+	width: 15%;
+	height: 15%;
 	position: absolute;            
-	top: 90%;
+	top: 85%;
 	margin-right: -50%;
     transform: translate(-50%, -50%);
 }
