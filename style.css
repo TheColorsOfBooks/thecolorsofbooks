@@ -16,9 +16,14 @@ body {
 #start {
 	font-family: 'Josefin Sans', 'Noto Sans';
 	text-align: center;
-	position: relative;
 	-webkit-animation: colorchange 20s infinite;
 	animation: colorchange 15s ease 5s infinite alternate;
+}
+
+.startwrap {
+	margin: auto;
+ 	position: absolute;
+  	top: 50%; left: 0; bottom: 0; right: 0;
 }
 
 
@@ -61,11 +66,7 @@ h1 {
 	font-weight: 600;
 	color: #FFFFFF;
 	font-size: 5vw;
-	position: absolute;            
-	top: 35%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
+
 }
 
 h5.boom{
@@ -80,23 +81,14 @@ h4.boom {
 	padding: 0px;
 	margin: 0px;
 	color: #117475;
-
 }
 
 
-
 h2.tagline {
-	position: absolute;
-	padding: 20%;
-	top: 45%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
 }
 
 
 h2 {
-	padding-top: 40px;
 	color: #FFFFFF;
 	font-weight: 100;
 	font-size: 3vw;
