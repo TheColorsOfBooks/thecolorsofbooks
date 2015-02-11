@@ -33,9 +33,9 @@
 /* CSS FOR THE COLOR KEY (WHICH IS A LIST) */
 
 #belowlegend {
-  opacity: 0.6;
+  opacity: 0.9;
   font-size: 1.3vw;
-  color: white;
+  color: #5A5A5A;
 }
 
 #legendwrap {
@@ -47,7 +47,8 @@
   width: 60%;
   margin-right: auto;
   margin-left: auto;
-  font-size: 1.3vw;
+  font-size: 1.4vw;
+  opacity: 0.9;
 }
 
 .key:hover {
@@ -65,7 +66,7 @@
 div#sticker {
   overflow: hidden;
   width: 100%;
-  background-color: ##FFFFF7;
+  background-color: #FFFFFF;
   color: #5A5A5A;
   opacity: 1;
   z-index: 100;
@@ -74,7 +75,7 @@ div#sticker {
 .stick {
   top:0px;
   position:fixed;
-  background-color: #e9f1ed;
+  background-color: #FFFFFF;
   margin-bottom: 20px;
   
 }

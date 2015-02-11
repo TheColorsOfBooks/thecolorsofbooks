@@ -23,13 +23,13 @@ body {
 .startwrap {
 	margin: auto;
  	position: absolute;
-  	top: 45%; left: 0; bottom: 0; right: 0;
+  	top: 40%; left: 0; bottom: 0; right: 0;
 }
 
 .innerwrap {
 	margin: auto;
  	position: absolute;
-  	top: 25%; left: 0; bottom: 0; right: 0;
+  	top: 0; left: 0; bottom: 0; right: 0;
 }
 
 
@@ -55,8 +55,8 @@ body {
 
 .down {
 	opacity: 0.2;
-	width: 15%;
-	height: 15%;
+	width: 10%;
+	height: 10%;
 	position: absolute;            
 	top: 85%;
 	margin-right: -50%;
@@ -110,22 +110,22 @@ h3 {
 
 #intro {
 	text-align: left;
-	height: 65vh;
-	background-color: ##FFFFF7;
+	height: 75vh;
+	background-color: #FFFFFF;
 	color: #5A5A5A;
 
 }
 
 #filling {
 	width: 100vw;
-	height: 25vh;
-	background-color: ##FFFFF7;
+	height: 15vh;
+	background-color: #FFFFFF;
 }
 
 h3.intro {
-	font-family: 'Josefin Sans';
+	font-family: 'Merriweather';
 	font-weight: 100;
-	font-size: 2.8vw;
+	font-size: 1.8vw;
 	position: relative;
 	width: 60%;
 	top: 50%;
